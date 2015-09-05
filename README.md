@@ -1,4 +1,4 @@
-Resgrid Azure Redis Cache Interface with Protobuf
+Resgrid Azure Redis Cache with Protobuf
 ===========================
 
 This is the code that Resgrid uses to interface with Azure's Redis Cache (but I'll work with any Redis Cache Server) utilizing Protobuf. Unlike a number of simple samples out there for interacting with Azure's Redis cache this code also has support for fallback function making it painless to call the cache and manage adding new objects.
@@ -25,10 +25,10 @@ Solution
 
 Notes
 -------------
-When we were looking around for some good example of wrapping Entity Framework inside a repository pattern there were tons of one off examples or examples buried in extremely large projects. Our goal here to show a clean and simple of a generic entity framework repository. Inside the Resgrid.Repository project you can open up the RepositoryBase file to see the meat and potatoes of the generic repo.
+In the AzureRedisCacheProvider class we have a preprocessor directive to turn Redis Caching OFF for non-release builds. This allows for devs (in Debug builds) to test locally without hitting the Redis server while Release builds can connect as normal.
 
-Shawn Jackson (@DesignLimbo\designlimbo.com)
-Jason Jarrett (@staxmanade\staxmanade.com)
+Shawn Jackson (Twitter: @DesignLimbo Blog: http:\\designlimbo.com)
+Jason Jarrett (Twitter: @staxmanade Blog: http:\\staxmanade.com)
 
 *******
 
