@@ -27,8 +27,8 @@ Notes
 -------------
 In the AzureRedisCacheProvider class we have a preprocessor directive to turn Redis Caching OFF for non-release builds. This allows for devs (in Debug builds) to test locally without hitting the Redis server while Release builds can connect as normal.
 
-Shawn Jackson (Twitter: @DesignLimbo Blog: http:\\designlimbo.com)
-Jason Jarrett (Twitter: @staxmanade Blog: http:\\staxmanade.com)
+Shawn Jackson (Twitter: @DesignLimbo Blog: http://designlimbo.com)
+Jason Jarrett (Twitter: @staxmanade Blog: http://staxmanade.com)
 
 *******
 
